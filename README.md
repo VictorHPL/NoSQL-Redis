@@ -1,19 +1,19 @@
 # Projeto NoSQL - Redis (Cache de Chave-Valor)
 
-Este projeto foi desenvolvido como requisito parcial da disciplina de Banco de Dados. [cite_start]O objetivo é demonstrar na prática o uso do **Redis** (Remote Dictionary Server), um banco de dados NoSQL do tipo **Key-Value Store**[cite: 27].
+Este projeto foi desenvolvido como requisito parcial da disciplina de Banco de Dados. O objetivo é demonstrar na prática o uso do **Redis** (Remote Dictionary Server), um banco de dados NoSQL do tipo **Key-Value Store**.
 
 ## 📚 Contexto do Trabalho
 
 Conforme solicitado nas instruções do projeto:
 
-* [cite_start]**Paradigma:** Cache de chave-valor (Key-value cache)[cite: 24].
-* [cite_start]**SGBD Escolhido:** Redis[cite: 27].
-* [cite_start]**Cenário de Aplicação:** Redes Sociais[cite: 41].
+* **Paradigma:** Cache de chave-valor (Key-value cache).
+* **SGBD Escolhido:** Redis.
+* **Cenário de Aplicação:** Redes Sociais.
     * *Justificativa:* O Redis é ideal para armazenar sessões de usuários e perfis temporários (cache) devido à sua baixa latência, permitindo que dados como "Status Online" ou "Últimas interações" sejam acessados em milissegundos.
 
 ## 🛠️ Funcionalidades (CRUD)
 
-[cite_start]O script `app.py` realiza as seguintes operações exigidas[cite: 45]:
+O script `app.py` realiza as seguintes operações exigidas:
 
 1.  **Create:** Cria um perfil de usuário usando Hash (`HSET`).
 2.  **Read:** Recupera os dados do perfil (`HGETALL`).
